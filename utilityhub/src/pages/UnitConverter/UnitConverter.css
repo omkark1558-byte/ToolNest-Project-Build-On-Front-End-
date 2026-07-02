@@ -1,0 +1,543 @@
+/* ===============================
+   UNIT CONVERTER
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.unit-page{
+    width:100%;
+    min-height:100vh;
+    background:#f4f7fb;
+    padding:40px;
+}
+
+/* ===============================
+   BACK BUTTON
+================================== */
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:600;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    color:#1d4ed8;
+}
+
+/* ===============================
+   HEADER
+================================== */
+
+.unit-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.unit-header h1{
+    font-size:42px;
+    color:#1e293b;
+    margin-bottom:10px;
+}
+
+.unit-header p{
+    color:#64748b;
+    font-size:17px;
+}
+
+/* ===============================
+   MAIN CARD
+================================== */
+
+.unit-card{
+
+    width:100%;
+    max-width:900px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/* ===============================
+ CATEGORY
+================================== */
+
+.category-section h3{
+
+    margin-bottom:15px;
+
+    color:#334155;
+
+}
+
+.category-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.category-buttons button{
+
+    border:none;
+
+    padding:12px 22px;
+
+    background:#e2e8f0;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.category-buttons button:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.category-buttons .active{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* ===============================
+ INPUT
+================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:30px;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.form-group input{
+
+    height:50px;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:10px;
+
+    padding:0 18px;
+
+    font-size:17px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ===============================
+ CONVERTER GRID
+================================== */
+
+.converter-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    1fr
+
+    100px
+
+    1fr;
+
+    gap:20px;
+
+    align-items:end;
+
+}
+
+.converter-grid label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#334155;
+
+    font-weight:600;
+
+}
+
+.converter-grid select{
+
+    width:100%;
+
+    height:50px;
+
+    border-radius:10px;
+
+    border:1px solid #dbe4ee;
+
+    padding:0 15px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.converter-grid select:focus{
+
+    border-color:#2563eb;
+
+}
+
+/* ===============================
+ SWAP
+================================== */
+
+.swap-container{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.swap-btn{
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+
+    0 10px 25px rgba(37,99,235,.35);
+
+}
+
+.swap-btn:hover{
+
+    transform:rotate(180deg);
+
+    background:#1d4ed8;
+
+}
+
+/* ===============================
+ PRECISION
+================================== */
+
+.precision-box{
+
+    margin-top:35px;
+
+}
+
+.precision-box label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.precision-box select{
+
+    width:200px;
+
+    height:50px;
+
+    border-radius:10px;
+
+    border:1px solid #dbe4ee;
+
+    padding:10px;
+
+}
+
+/* ===============================
+ RESULT
+================================== */
+
+.result-box{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #0ea5e9
+    );
+
+    color:white;
+
+}
+
+.result-box h3{
+
+    margin-bottom:15px;
+
+    font-size:20px;
+
+}
+
+.result-box h2{
+
+    font-size:50px;
+
+    margin-bottom:10px;
+
+}
+
+.result-box p{
+
+    opacity:.9;
+
+}
+
+/* ===============================
+ BUTTONS
+================================== */
+
+.action-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    margin-top:35px;
+
+}
+
+.action-buttons button{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.action-buttons button:first-child{
+
+    background:#16a34a;
+
+    color:white;
+
+}
+
+.action-buttons button:last-child{
+
+    background:#ef4444;
+
+    color:white;
+
+}
+
+.action-buttons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===============================
+ HISTORY
+================================== */
+
+.history-card{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:35px auto;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.history-card h2{
+
+    margin-bottom:20px;
+
+    color:#1e293b;
+
+}
+
+.history-item{
+
+    padding:18px;
+
+    border-radius:10px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+}
+
+.history-item p{
+
+    color:#64748b;
+
+}
+
+/* ===============================
+ MOBILE
+================================== */
+
+@media(max-width:768px){
+
+.unit-page{
+
+padding:20px;
+
+}
+
+.unit-card{
+
+padding:25px;
+
+}
+
+.converter-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.swap-container{
+
+margin-top:10px;
+
+margin-bottom:10px;
+
+}
+
+.swap-btn{
+
+width:55px;
+
+height:55px;
+
+}
+
+.action-buttons{
+
+flex-direction:column;
+
+}
+
+.action-buttons button{
+
+width:100%;
+
+}
+
+.result-box h2{
+
+font-size:35px;
+
+}
+
+.unit-header h1{
+
+font-size:32px;
+
+}
+
+}

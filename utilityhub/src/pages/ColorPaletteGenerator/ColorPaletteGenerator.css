@@ -1,0 +1,154 @@
+/* ===========================
+   COLOR PALETTE GENERATOR
+=========================== */
+
+.palette-page{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* Back */
+
+.back-link{
+    display:inline-block;
+    margin-bottom:22px;
+    color:#8b5cf6;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-link:hover{
+    color:#a78bfa;
+}
+
+/* Main Card */
+
+.palette-box{
+    background:rgba(17,24,39,.72);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:35px;
+    color:white;
+    box-shadow:0 15px 40px rgba(0,0,0,.28);
+}
+
+.palette-box h1{
+    margin:0;
+    color:white;
+    font-size:34px;
+}
+
+.palette-box p{
+    color:#cbd5e1;
+    margin:10px 0 30px;
+    line-height:1.7;
+}
+
+/* Generate Button */
+
+.generate-btn{
+    border:none;
+    border-radius:12px;
+    padding:14px 28px;
+    background:linear-gradient(135deg,#2563eb,#8b5cf6);
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+    margin-bottom:30px;
+}
+
+.generate-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+}
+
+/* Grid */
+
+.palette-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
+}
+
+/* Card */
+
+.color-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:15px;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.color-card:hover{
+    transform:translateY(-8px);
+    border-color:#8b5cf6;
+    box-shadow:0 15px 35px rgba(139,92,246,.30);
+}
+
+/* Color Preview */
+
+.color-preview{
+    width:100%;
+    height:140px;
+    border-radius:14px;
+    display:block;
+}
+
+/* Info */
+
+.color-info{
+    padding:18px;
+    text-align:center;
+}
+
+.color-info h3{
+    color:white;
+    margin-bottom:10px;
+}
+
+.color-info p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+}
+
+.color-info{
+    margin-top:15px;
+    text-align:center;
+}
+
+.color-info span{
+    display:block;
+    color:#94a3b8;
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+.color-info strong{
+    color:#fff;
+    font-size:18px;
+    letter-spacing:1px;
+}
+/* Mobile */
+
+@media(max-width:768px){
+
+.palette-box{
+    padding:25px;
+}
+
+.palette-box h1{
+    font-size:28px;
+}
+
+.palette-grid{
+    grid-template-columns:1fr;
+}
+
+}
