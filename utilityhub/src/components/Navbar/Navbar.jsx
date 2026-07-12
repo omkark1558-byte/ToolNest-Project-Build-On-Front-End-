@@ -7,20 +7,20 @@ function Navbar() {
     <nav className="navbar">
 
       <Link to="/" className="logo">
-        ToolNest
+        Tool<span>Nest</span>
       </Link>
 
       <div className="nav-right">
 
-        <Link to="/">
+        <Link to="/" className="nav-link">
           Home
         </Link>
 
-        <a href="#categories">
+        <a href="#categories" className="nav-link">
           Tools
         </a>
 
-        <a href="#faq">
+        <a href="#faq" className="nav-link">
           FAQ
         </a>
 

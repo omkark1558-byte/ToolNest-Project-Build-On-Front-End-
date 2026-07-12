@@ -1,207 +1,7 @@
-// import { Link } from "react-router-dom";
-// import "./Dashboard.css";
-
-// import {
-//   FaMoneyBillWave,
-//   FaCalendarAlt,
-//   FaPalette,
-//   FaExchangeAlt,
-//   FaUniversity,
-//   FaQrcode,
-//   FaLock,
-//   FaFileCode,
-//   FaCode,
-//   FaUsers,
-//   FaGlobe,
-//   FaPercentage,
-//   FaRulerCombined,
-// } from "react-icons/fa";
-
-// const tools = [
-//   {
-//     title: "GST Calculator",
-//     path: "/gst-calculator",
-//     icon: <FaMoneyBillWave />,
-//     description: "Calculate GST amount instantly."
-//   },
-//   {
-//     title: "Age Calculator",
-//     path: "/age-calculator",
-//     icon: <FaCalendarAlt />,
-//     description: "Calculate your exact age."
-//   },
-//   {
-//     title: "Color Palette Generator",
-//     path: "/color-palette-generator",
-//     icon: <FaPalette />,
-//     description: "Generate beautiful color palettes."
-//   },
-//   {
-//     title: "Currency Converter",
-//     path: "/currency-converter",
-//     icon: <FaExchangeAlt />,
-//     description: "Convert currencies quickly."
-//   },
-//   {
-//     title: "EMI Calculator",
-//     path: "/emi-calculator",
-//     icon: <FaUniversity />,
-//     description: "Estimate monthly EMI."
-//   },
-//   {
-//     title: "QR Generator",
-//     path: "/qr-generator",
-//     icon: <FaQrcode />,
-//     description: "Generate QR codes."
-//   },
-//   {
-//     title: "Password Generator",
-//     path: "/password-generator",
-//     icon: <FaLock />,
-//     description: "Generate secure passwords."
-//   },
-//   {
-//     title: "Word Counter",
-//     path: "/word-counter",
-//     icon: <FaFileCode />,
-//     description: "Count words and characters."
-//   },
-//   {
-//     title: "JSON Formatter",
-//     path: "/json-formatter",
-//     icon: <FaCode />,
-//     description: "Format JSON data."
-//   },
-//   {
-//     title: "Split Bill Calculator",
-//     path: "/split-bill-calculator",
-//     icon: <FaUsers />,
-//     description: "Split bills easily."
-//   },
-//   {
-//     title: "Meta Tag Generator",
-//     path: "/meta-tag-generator",
-//     icon: <FaGlobe />,
-//     description: "Generate SEO meta tags."
-//   },
-//   {
-//     title: "Tip Calculator",
-//     path: "/tip-calculator",
-//     icon: <FaPercentage />,
-//     description: "Calculate restaurant tips."
-//   },
-//   {
-//     title: "Unit Converter",
-//     path: "/unit-converter",
-//     icon: <FaRulerCombined />,
-//     description: "Convert units instantly."
-//   }
-// ];
-
-
-// function Dashboard() {
-//   return (
-//     <main className="dashboard">
-//       <section className="hero">
-//         <h1>ToolNest Dashboard</h1>
-//         <p>Free calculators and generators for quick everyday use.</p>
-//       </section>
-
-//       <section className="tools-grid">
-//         <Link className="tool-card" to="/gst-calculator">
-//           <FaMoneyBillWave className="tool-icon" />
-//           {/* <h2>GST Calculator</h2> */}
-//           <p>Calculate GST amount and total price instantly.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/age-calculator">
-//           <FaCalendarAlt className="tool-icon" />
-//           {/* <h2>Age Calculator</h2> */}
-//           <p>Calculate your exact age in years, months, and days.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/color-palette-generator">
-//           <FaPalette className="tool-icon" />
-//           {/* <h2>Color Palette Generator</h2> */}
-//           <p>Generate color palettes and copy hex codes.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/currency-converter">
-//           <FaExchangeAlt className="tool-icon" />
-//           {/* <h2>Currency Converter</h2> */}
-//           <p>Convert common currencies with quick reference rates.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/emi-calculator">
-//           <FaUniversity className="tool-icon" />
-//           {/* <h2>EMI Calculator</h2> */}
-//           <p>Estimate monthly loan payments quickly.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/qr-generator">
-//           <FaQrcode className="tool-icon" />
-//           {/* <h2>QR Generator</h2> */}
-//           <p>Create QR codes from links or text.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/password-generator">
-//           <FaLock className="tool-icon" />
-//           {/* <h2>Password Generator</h2> */}
-//           <p>Generate strong random passwords instantly.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/word-counter">
-//           <FaFileCode className="tool-icon" />
-//           {/* <h2>Word Counter</h2> */}
-//           <p>Analyze words, characters, reading time, and writing density.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/json-formatter">
-//           <FaCode className="tool-icon" />
-//           {/* <h2>JSON Formatter</h2> */}
-//           <p>Format, validate, minify, and copy JSON data.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/split-bill-calculator">
-//           <FaUsers className="tool-icon" />
-//           {/* <h2>Split Bill Calculator</h2> */}
-//           <p>Split bills with tip between multiple people.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/meta-tag-generator">
-//           <FaGlobe className="tool-icon" />
-//           {/* <h2>Meta Tag Generator</h2> */}
-//           <p>Create SEO and social sharing meta tags.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//         <Link className="tool-card" to="/tip-calculator">
-//           <FaPercentage className="tool-icon" />
-//           {/* <h2>Tip Calculator</h2> */}
-//           <p>Calculate tip and total bill amount quickly.</p>
-//           <span>Open Tool</span>
-//         </Link>
-
-//       </section>
-//     </main>
-//   );
-// }
-
-// export default Dashboard;
-
 import { Link } from "react-router-dom";
 import "./Dashboard.css";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { FaSearch } from "react-icons/fa";
 
 import {
   FaMoneyBillWave,
@@ -257,6 +57,21 @@ const featuredTools = [
     icon: <FaCode />,
   },
 ];
+const allTools = [
+  { name: "GST Calculator", path: "/gst-calculator", icon: <FaMoneyBillWave /> },
+  { name: "Age Calculator", path: "/age-calculator", icon: <FaCalendarAlt /> },
+  { name: "Color Palette", path: "/color-palette-generator", icon: <FaPalette /> },
+  { name: "Currency Converter", path: "/currency-converter", icon: <FaExchangeAlt /> },
+  { name: "EMI Calculator", path: "/emi-calculator", icon: <FaUniversity /> },
+  { name: "QR Generator", path: "/qr-generator", icon: <FaQrcode /> },
+  { name: "Password Generator", path: "/password-generator", icon: <FaLock /> },
+  { name: "Word Counter", path: "/word-counter", icon: <FaFileCode /> },
+  { name: "JSON Formatter", path: "/json-formatter", icon: <FaCode /> },
+  { name: "Split Bill", path: "/split-bill-calculator", icon: <FaUsers /> },
+  { name: "Meta Tag Generator", path: "/meta-tag-generator", icon: <FaGlobe /> },
+  { name: "Tip Calculator", path: "/tip-calculator", icon: <FaPercentage /> },
+  { name: "Unit Converter", path: "/unit-converter", icon: <FaRulerCombined /> },
+];
 const faqs = [
   {
     question: "Is ToolNest free?",
@@ -278,6 +93,12 @@ const faqs = [
 
 function Dashboard() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [search, setSearch] = useState("");
+  const filteredTools = useMemo(() => {
+    return allTools.filter((tool) =>
+      tool.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }, [search]);
   return (
 
     <main className="dashboard">
@@ -301,14 +122,56 @@ function Dashboard() {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">
+          <a href="#categories" className="primary-btn">
             Explore Tools
-          </button>
+          </a>
 
-          <button className="secondary-btn">
-            Free Forever
-          </button>
+          <a href="#faq" className="secondary-btn">
+            Learn More
+          </a>
         </div>
+      </section>
+      <section className="search-section">
+        <div className="search-box">
+
+          <FaSearch className="search-icon" />
+
+          <input
+            type="text"
+            placeholder="Search any tool..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+
+        </div>
+      </section>
+
+      <section id="categories" className="categories">
+
+        <h2 className="section-title">
+          Explore <span>All Tools</span>
+        </h2> <div className="category-grid">
+
+          {filteredTools.map((tool, index) => (
+
+            <Link
+              key={index}
+              to={tool.path}
+              className="category-item"
+            >
+
+              <div className="tool-icon">
+                {tool.icon}
+              </div>
+
+              <span>{tool.name}</span>
+
+            </Link>
+
+          ))}
+
+        </div>
+
       </section>
       <section className="stats">
 
@@ -333,167 +196,33 @@ function Dashboard() {
         </div>
 
       </section>
+      <section className="trusted">
+        <p className="trusted-title">Trusted by Developers Worldwide</p>
 
-      {/* <section className="tools-grid">
+        <div className="trusted-grid">
 
-        <Link className="tool-card" to="/gst-calculator">
-          <div className="tool-icon">
-            <FaMoneyBillWave />
+          <div className="trusted-card">
+            <h2>12+</h2>
+            <span>Developer Tools</span>
           </div>
 
-          <h3>GST Calculator</h3>
-
-          <p>Calculate GST amount instantly.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/age-calculator">
-          <div className="tool-icon">
-            <FaCalendarAlt />
+          <div className="trusted-card">
+            <h2>100%</h2>
+            <span>Free Access</span>
           </div>
 
-          <h3>Age Calculator</h3>
-
-          <p>Calculate your exact age.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/color-palette-generator">
-          <div className="tool-icon">
-            <FaPalette />
+          <div className="trusted-card">
+            <h2>Fast</h2>
+            <span>Instant Results</span>
           </div>
 
-          <h3>Color Palette Generator</h3>
-
-          <p>Create beautiful color palettes.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/currency-converter">
-          <div className="tool-icon">
-            <FaExchangeAlt />
+          <div className="trusted-card">
+            <h2>24/7</h2>
+            <span>Always Available</span>
           </div>
 
-          <h3>Currency Converter</h3>
-
-          <p>Convert currencies instantly.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/emi-calculator">
-          <div className="tool-icon">
-            <FaUniversity />
-          </div>
-
-          <h3>EMI Calculator</h3>
-
-          <p>Estimate monthly EMI.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/qr-generator">
-          <div className="tool-icon">
-            <FaQrcode />
-          </div>
-
-          <h3>QR Generator</h3>
-
-          <p>Create QR Codes instantly.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/password-generator">
-          <div className="tool-icon">
-            <FaLock />
-          </div>
-
-          <h3>Password Generator</h3>
-
-          <p>Generate secure passwords.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/word-counter">
-          <div className="tool-icon">
-            <FaFileCode />
-          </div>
-
-          <h3>Word Counter</h3>
-
-          <p>Count words and characters.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/json-formatter">
-          <div className="tool-icon">
-            <FaCode />
-          </div>
-
-          <h3>JSON Formatter</h3>
-
-          <p>Format JSON instantly.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/split-bill-calculator">
-          <div className="tool-icon">
-            <FaUsers />
-          </div>
-
-          <h3>Split Bill</h3>
-
-          <p>Split bills easily.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/meta-tag-generator">
-          <div className="tool-icon">
-            <FaGlobe />
-          </div>
-
-          <h3>Meta Tag Generator</h3>
-
-          <p>Create SEO meta tags.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/tip-calculator">
-          <div className="tool-icon">
-            <FaPercentage />
-          </div>
-
-          <h3>Tip Calculator</h3>
-
-          <p>Calculate restaurant tips.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-        <Link className="tool-card" to="/unit-converter">
-          <div className="tool-icon">
-            <FaRulerCombined />
-          </div>
-
-          <h3>Unit Converter</h3>
-
-          <p>Convert units instantly.</p>
-
-          <span>Open Tool →</span>
-        </Link>
-
-      </section> */}
-
+        </div>
+      </section>
       <section className="features">
 
         <h2 className="section-title">
@@ -586,7 +315,7 @@ function Dashboard() {
         </div>
 
       </section>
-    <section id="faq" className="faq">
+      <section id="faq" className="faq">
 
         <h2 className="section-title">
           Frequently Asked Questions
@@ -629,77 +358,6 @@ function Dashboard() {
             </div>
           ))
         }
-
-      </section>
-     <section id="categories" className="categories">
-
-        <h2 className="section-title">
-          Popular Utilities
-        </h2>
-
-        <div className="category-grid">
-
-          <Link to="/gst-calculator" className="category-item">
-            <FaMoneyBillWave className="category-icon gst" />
-            <span>GST Calculator</span>
-          </Link>
-
-          <Link to="/age-calculator" className="category-item">
-            <FaCalendarAlt className="category-icon age" />
-            <span>Age Calculator</span>
-          </Link>
-
-          <Link to="/color-palette-generator" className="category-item">
-            <FaPalette className="category-icon palette" />
-            <span>Color Palette</span>
-          </Link>
-
-          <Link to="/currency-converter" className="category-item">
-            <FaExchangeAlt className="category-icon currency" />
-            <span>Currency</span>
-          </Link>
-
-          <Link to="/emi-calculator" className="category-item">
-            <FaUniversity className="category-icon emi" />
-            <span>EMI</span>
-          </Link>
-
-          <Link to="/qr-generator" className="category-item">
-            <FaQrcode className="category-icon qr" />
-            <span>QR Generator</span>
-          </Link>
-
-          <Link to="/password-generator" className="category-item">
-            <FaLock className="category-icon password" />
-            <span>Password</span>
-          </Link>
-
-          <Link to="/word-counter" className="category-item">
-            <FaFileCode className="category-icon word" />
-            <span>Word Counter</span>
-          </Link>
-
-          <Link to="/json-formatter" className="category-item">
-            <FaCode className="category-icon json" />
-            <span>JSON Formatter</span>
-          </Link>
-
-          <Link to="/split-bill-calculator" className="category-item">
-            <FaUsers className="category-icon split" />
-            <span>Split Bill</span>
-          </Link>
-
-          <Link to="/meta-tag-generator" className="category-item">
-            <FaGlobe className="category-icon meta" />
-            <span>Meta Tag</span>
-          </Link>
-
-          <Link to="/tip-calculator" className="category-item">
-            <FaPercentage className="category-icon tip" />
-            <span>Tip Calculator</span>
-          </Link>
-
-        </div>
 
       </section>
 
