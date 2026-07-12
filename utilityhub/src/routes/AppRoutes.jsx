@@ -13,7 +13,8 @@ import JsonFormatter from "../pages/JsonFormatter/JsonFormatter";
 import SplitBillCalculator from "../pages/SplitBillCalculator/SplitBillCalculator";
 import MetaTagGenerator from "../pages/MetaTagGenerator/MetaTagGenerator";
 import TipCalculator from "../pages/TipCalculator/TipCalculator";
- 
+import ResumeBuilder from "../pages/ResumeBuilder/ResumeBuilder";
+
 
 function AppRoutes() {
   return (
@@ -31,9 +32,16 @@ function AppRoutes() {
       <Route path="/split-bill-calculator" element={<SplitBillCalculator />} />
       <Route path="/meta-tag-generator" element={<MetaTagGenerator />} />
       <Route path="/tip-calculator" element={<TipCalculator />} />
-     
+
+      <Route
+        path="/resume-builder"
+        element={<ResumeBuilder />}
+      />
 
     </Routes>
+
+
+
   );
 }
 

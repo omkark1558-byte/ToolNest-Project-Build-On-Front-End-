@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Dashboard.css";
 import { useMemo, useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { FaFileAlt } from "react-icons/fa";
 
 import {
   FaMoneyBillWave,
@@ -71,6 +72,7 @@ const allTools = [
   { name: "Meta Tag Generator", path: "/meta-tag-generator", icon: <FaGlobe /> },
   { name: "Tip Calculator", path: "/tip-calculator", icon: <FaPercentage /> },
   { name: "Unit Converter", path: "/unit-converter", icon: <FaRulerCombined /> },
+  { name: "Resume Builder", path: "/resume-builder", icon: <FaFileAlt /> }
 ];
 const faqs = [
   {
